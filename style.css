@@ -1,0 +1,240 @@
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary: #0d6efd;
+  --dark: #21252f;
+  --body: #888;
+  --white: #ffffff;
+  --box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+  color: white !important;
+}
+ul {
+  display: flex;
+  list-style: none;
+}
+.navbar-brand {
+  font-size: 25px;
+  font-weight: 500;
+}
+.navbar {
+  box-shadow: var(--box-shadow);
+}
+nav li {
+  border: none;
+  display: inline-block;
+  padding-right: 5px;
+  transition: all linear 0.5s;
+  margin-right: 20px;
+  font-size: 18px;
+}
+nav li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  padding-right: 5px;
+}
+ul li {
+  cursor: pointer;
+  position: relative;
+}
+
+.background-nav {
+  background-color: rgba(237, 39, 39, 0.775);
+}
+li.active::after {
+  position: absolute;
+  content: '';
+  height: 6px;
+  width: 100%;
+  background-color: #ff105e;
+  left: 0;
+  bottom: -7px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  animation: appear 0.2s linear;
+}
+@keyframes appear {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  li.active::after {
+    width: 30%;
+  }
+}
+
+/* HERO */
+
+.hero {
+  background-image: url(IMAGE/landing-page.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+}
+
+.hero::after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.pad-pad {
+  padding-right: 10px;
+}
+
+.logo-csm1 {
+  width: 40%;
+}
+
+@media screen and (max-width: 2560px) {
+  .navbar-logo {
+    width: 25%;
+  }
+  .nav-link {
+    border-bottom: 2px solid white;
+  }
+  .denji-png {
+    width: 25%;
+  }
+  .denji-2png {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .nav-link {
+    border-bottom: 2px solid white;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .navbar-logo {
+    width: 50%;
+  }
+  .denji-png {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .logo-csm1 {
+    width: 50%;
+  }
+}
+
+.border-sayang {
+  border-left: 4px solid #212520;
+}
+
+.denji {
+  width: 75%;
+}
+
+.hero2 {
+  background-image: url(IMAGE/power-lp.jpg);
+  background-position: right;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+}
+
+.hero2::after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.hero3 {
+  background-image: url(IMAGE/aki-lpi.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+}
+
+.hero3::after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+/* MAKIMA */
+
+.hero4 {
+  background-image: url(IMAGE/makima-landingpage.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+}
+
+.hero4::after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.woof {
+  margin-top: -100px;
+  color: white;
+}
+
+.hero5 {
+  background-image: url(IMAGE/darknes.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+}
+
+.hero5::after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+
+/* footer */
+
+.lebarlogo {
+  width: 175px;
+}
+.price2 {
+  float: right;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.dropdown-item {
+  border-bottom: 2px solid black;
+  margin-left: 10px;
+}
